@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/styles/output.css">
+    <link rel="stylesheet" href="assets/styles/aos.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/icon">
+    <title>Nike</title>
+</head>
+<body>
+    <svg class="hidden">
+        <symbol id="x-mark" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </symbol>
+    </svg>
+    <!-- desktop header -->
+    <header class="absolute hidden md:block w-full py-8 px-16 z-10">
+        <nav class="container flex justify-between items-center">
+            <!-- logo -->
+            <a href="#">
+                <img src="assets/img/images/header-logo.svg" alt="logo">
+            </a>
+
+            <ul class="flex flex-1 justify-end lg:justify-center items-center gap-x-8 lg:gap-x-16">
+                <li><a class="link" href="#home">Home</a></li>
+                <li><a class="link" href="#about">About Us</a></li>
+                <li><a class="link" href="#popular">Products</a></li>
+                <li><a class="link" href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- mobile header -->
+    <div class="mobile-header" id="mobile-header">
+        <a href="#">
+            <img src="assets/img/images/header-logo.svg" alt="logo" width="130">
+        </a>
+        
+        <img class="cursor-pointer" src="assets/img/icons/hamburger.svg" alt="menu" width="25" height="25" id="mobile-menu-open">
+
+        <div id="mobile-menu" class="mobile-menu--deactive">
+            <div class="flex items-start justify-end cursor-pointer">
+                <svg class="w-7 h-7" id="mobile-menu-close">
+                    <use href="#x-mark"></use>
+                </svg>
+            </div>
+
+            <ul class="grid gap-y-10 text-center">
+                <li><a class="link font-medium" href="#home">Home</a></li>
+                <li><a class="link font-medium" href="#about">About Us</a></li>
+                <li><a class="link font-medium" href="#popular">Products</a></li>
+                <li><a class="link font-medium" href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="overflow-hidden">
+        <!-- hero section -->
+        <section id="home" data-aos="fade-down" data-aos-duration="1250" class="container flex flex-col xl:flex-row gap-10 pb-24">
+            <!-- desc -->
+            <div class="pt-8 xl:pt-28 max-w-[576px] h-fit md:h-screen flex flex-col justify-start md:justify-center">
+                <span class="font-montserrat text-coral-red text-xl leading-6">Our Summer collections</span>
+                <h1 class="font-palanquin whitespace-nowrap	 md:leading-[106px] font-bold text-4xl sm:text-6xl md:text-8xl mt-10"><span class="relative bg-white z-10 xl:pr-10">The New Arrival </span> <br>
+                    <span class="text-coral-red inline-block mt-3">Nike</span> Shoes</h1>
+                <p class="font-montserrat text-lg/8 max-w-[24rem] text-slate-gray mt-6 mb-10 md:mb-14">
+                    Discover stylish Nike arrivals, quality comfort, and innovation for your active life.
+                </p>
+                <a href="#" class="button">
+                    Shop now
+
+                    <img class="ml-2 rounded-full w-5 h-5" src="assets/img/icons/arrow-right.svg" alt="">
+                </a>
+                <div class="flex items-center gap-8 sm:gap-16 mt-10 md:mt-20">
+                    <div>
+                        <p class="font-palanquin font-bold text-2xl sm:text-5xl/[58px]">1k+</p>
+                        <span class="font-montserrat text-base/7 text-slate-gray">Brands</span>
+                    </div>
+                    <div>
+                        <p class="font-palanquin font-bold text-2xl sm:text-5xl/[58px]">500+</p>
+                        <span class="font-montserrat text-base/7 text-slate-gray">Shops</span>
+                    </div>
+                    <div>
+                        <p class="font-palanquin font-bold text-2xl sm:text-5xl/[58px]">250k+</p>
+                        <span class="font-montserrat text-base/7 text-slate-gray">Customers</span>
+                    </div>
+                </div>
+            </div>
+            <!-- img -->
+            <div class="hero-imgs">
+                <img class="w-[320px] h-[250px] md:h-[500px] md:w-[610px] shrink-0 object-contain" src="assets/img/images/big-shoe1.png" alt="hero-img">
+                <div class="w-full absolute right-0 left-0 flex-row -bottom-24 sm:-bottom-36 md:-bottom-[11rem] xl:-bottom-12 m-auto flex justify-center gap-2 xl:gap-6">
+                    <div data-aos="fade-down" data-aos-delay="0" data-img="assets/img/images/big-shoe1.png" class="collection collection--active">
+                        <img class="object-cover sm:object-contain w-32 h-16 sm:w-[127px] sm:h-[103px]" src="assets/img/images/thumbnail-shoe1.svg" alt="shoe 1">
+                    </div>
+                    <div data-aos="fade-down" data-aos-delay="100" data-img="assets/img/images/big-shoe2.png" class="collection">
+                        <img class="object-cover sm:object-contain w-32 h-16 sm:w-[127px] sm:h-[103px]" src="assets/img/images/thumbnail-shoe2.svg" alt="shoe 2">
+                    </div>
+                    <div data-aos="fade-down" data-aos-delay="200" data-img="assets/img/images/big-shoe3.png" class="collection">
+                        <img class="object-cover sm:object-contain w-32 h-16 sm:w-[127px] sm:h-[103px]" src="assets/img/images/thumbnail-shoe3.svg" alt="shoe 3">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Popular products -->
+        <section id="popular" data-aos="fade-down" class="container py-24">
+            <!-- desc -->
+            <div class="grid gap-5 justify-start">
+                <h2 class="font-palanquin text-5xl/[58px] font-bold">
+                    Our <span class="text-coral-red">Popular</span> Products
+                </h2>
+
+                <p class="mt-2 max-w-[32rem] font-montserrat text-slate-gray leading-6">
+                    Experience top-notch quality and style with our sought-after selections. Discover a world of comfort, design, and value
+                </p>
+            </div>
+            <!-- popular products -->
+            <div class="mt-16">
+                <div class="product-swiper swiper">
+                    <div class="swiper-wrapper">
+                        <!-- components -->
+                        <article class="product-card swiper-slide">
+                                <img slot="product__img" src="assets/img/images/shoe4.svg" alt="popular products" width="280" height="280">
+                                <div slot="product__rating" class="flex items-center gap-2.5 mt-8 ">
+                                    <img slot="star" src="assets/img/icons/star.svg" alt="rating" width="24" height="24">
+                                    <span slot="rating" class="text-xl/6 text-slate-gray font-montserrat">(4.5)</span>
+                                </div>
+                                <h4 slot="product-name" class="font-palanquin text-xl sm:text-2xl/9 font-semibold mt-2">Nike Air Jordan-01</h4>
+                                <p slot="product-price" class="font-montserrat font-semibold text-coral-red mt-2">$200.20</p>
+                        </article>
+
+                        <article class="product-card swiper-slide">
+                                <img slot="product__img" src="assets/img/images/shoe5.svg" alt="popular products" width="280" height="280">
+                                <div slot="product__rating" class="flex items-center gap-2.5 mt-8 ">
+                                    <img slot="star" src="assets/img/icons/star.svg" alt="rating" width="24" height="24">
+                                    <span slot="rating" class="text-xl/6 text-slate-gray font-montserrat">(4.0)</span>
+                                </div>
+                                <h4 slot="product-name" class="font-palanquin text-xl sm:text-2xl/9 font-semibold mt-2">Nike Air Jordan-001</h4>
+                                <p slot="product-price" class="font-montserrat font-semibold text-coral-red mt-2">$210.20</p>
+                        </article>
+
+                        <article class="product-card swiper-slide">
+                                <img slot="product__img" src="assets/img/images/shoe6.svg" alt="popular products" width="280" height="280">
+                                <div slot="product__rating" class="flex items-center gap-2.5 mt-8 ">
+                                    <img slot="star" src="assets/img/icons/star.svg" alt="rating" width="24" height="24">
+                                    <span slot="rating" class="text-xl/6 text-slate-gray font-montserrat">(4.75)</span>
+                                </div>
+                                <h4 slot="product-name" class="font-palanquin text-xl sm:text-2xl/9 font-semibold mt-2">Nike Air Jordan-10</h4>
+                                <p slot="product-price" class="font-montserrat font-semibold text-coral-red mt-2">$220.20</p>
+                        </article>
+
+                        <article class="product-card swiper-slide">
+                                <img slot="product__img" src="assets/img/images/shoe7.svg" alt="popular products" width="280" height="280">
+                                <div slot="product__rating" class="flex items-center gap-2.5 mt-8">
+                                    <img slot="star" src="assets/img/icons/star.svg" alt="rating" width="24" height="24">
+                                    <span slot="rating" class="text-xl/6 text-slate-gray font-montserrat">(4.5)</span>
+                                </div>
+                                <h4 slot="product-name" class="font-palanquin text-xl sm:text-2xl/9 font-semibold mt-2">Nike Air Jordan-100</h4>
+                                <p slot="product-price" class="font-montserrat font-semibold text-coral-red mt-2">$215.00</p>
+                        </article>
+
+                        <article class="product-card swiper-slide">
+                                <img slot="product__img" src="assets/img/images/shoe6.svg" alt="popular products" width="280" height="280">
+                                <div slot="product__rating" class="flex items-center gap-2.5 mt-8 ">
+                                    <img slot="star" src="assets/img/icons/star.svg" alt="rating" width="24" height="24">
+                                    <span slot="rating" class="text-xl/6 text-slate-gray font-montserrat">(4.5)</span>
+                                </div>
+                                <h4 slot="product-name" class="font-palanquin text-xl sm:text-2xl/9 font-semibold mt-2">Nike Air Jordan-001</h4>
+                                <p slot="product-price" class="font-montserrat font-semibold text-coral-red mt-2">$200.20</p>
+                        </article>
+
+                        <article class="product-card swiper-slide">
+                                <img slot="product__img" src="assets/img/images/shoe4.svg" alt="popular products" width="280" height="280">
+                                <div slot="product__rating" class="flex items-center gap-2.5 mt-8 ">
+                                    <img slot="star" src="assets/img/icons/star.svg" alt="rating" width="24" height="24">
+                                    <span slot="rating" class="text-xl/6 text-slate-gray font-montserrat">(4.5)</span>
+                                </div>
+                                <h4 slot="product-name" class="font-palanquin text-xl sm:text-2xl/9 font-semibold mt-2">Nike Air Jordan-01</h4>
+                                <p slot="product-price" class="font-montserrat font-semibold text-coral-red mt-2">$200.20</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about-us -->
+        <section id="about"  class="container py-24">
+            <div class="flex flex-col lg:flex-row justify-between lg:items-center gap-10">
+                <div data-aos="fade-right" data-aos-offset="300">
+                    <h2 class="section-title">
+                        We Provide You <span class="text-coral-red">Super <br> Quality</span> Shoes
+                    </h2>
+                    <p class="max-w-[512px] mt-4 font-montserrat sm:text-lg text-slate-gray">
+                        Ensuring premium comfort and style, our meticulously crafted footwear is designed to elevate your experience, providing you with unmatched quality, innovation, and a touch of elegance.
+                    </p>
+                    <p class="max-w-[512px] font-montserrat sm:text-lg text-slate-gray mt-6">
+                        Our dedication to detail and excellence ensures your satisfaction
+                    </p>
+                    <a href="#" class="button mt-11">
+                        Shop now
+
+                        <img class="ml-2 rounded-full w-5 h-5" src="assets/img/icons/arrow-right.svg" alt="">
+                    </a>
+                </div>
+                <img data-aos="fade-left" data-aos-offset="300" class="lg:shrink-0" src="assets/img/images/shoe8.svg" alt="about-us">
+            </div>
+        </section>
+        <!-- services -->
+        <section class="container py-10">
+            <div class="flex flex-col md:flex-row gap-9 flex-wrap">
+                <div data-aos="fade-down" class="flex-1 px-10 py-16 shadow-3xl rounded-[20px]">
+                    <div class="w-11 h-11 flex items-center justify-center rounded-full bg-coral-red">
+                        <img src="assets/img/icons/truck-fast.svg" alt="truck" width="24" height="24">
+                    </div>
+                    <h3 class="mt-5 font-palanquin text-3xl font-bold">Free shipping</h3>
+                    <p class="mt-3 font-montserrat text-lg text-slate-gray">Enjoy seamless shopping with our complimentary shipping service.</p>
+                </div>
+                <div data-aos="fade-down" data-aos-delay="100" class="flex-1 px-10 py-16 shadow-3xl rounded-[20px]">
+                    <div class="w-11 h-11 flex items-center justify-center rounded-full bg-coral-red">
+                        <img src="assets/img/icons/shield-tick.svg" alt="shield" width="24" height="24">
+                    </div> 
+                    <h3 class="mt-5 font-palanquin text-3xl font-bold">Secure Payment</h3>
+                    <p class="mt-3 font-montserrat text-lg text-slate-gray">Experience worry-free transactions with our secure payment options.</p>                   
+                </div>
+                <div data-aos="fade-down" data-aos-delay="150" class="xl:flex-1 w-full px-10 py-16 shadow-3xl rounded-[20px]">
+                    <div class="w-11 h-11 flex items-center justify-center rounded-full bg-coral-red">
+                        <img src="assets/img/icons/support.svg" alt="support" width="24" height="24">
+                    </div>
+                    <h3 class="mt-5 font-palanquin text-3xl font-bold">Love to help you</h3>
+                    <p class="mt-3 font-montserrat text-lg text-slate-gray">Our dedicated team is here to assist you every step of the way.</p>
+                </div>
+            </div>
+        </section>
+        <!-- special offer -->
+        <section  class="container py-24">
+            <div class="flex flex-col lg:flex-row justify-between lg:items-center gap-10">
+                <div data-aos="fade-right" class="flex-1">
+                    <img class="w-full object-contain" src="assets/img/images/offer.svg" alt="special offer" width="773" height="687">
+                </div>
+                <div data-aos="fade-left" data-aos-offset="300" class="flex-1">
+                    <h2 class="section-title"><span class="text-coral-red">Special</span> Offer</h2>
+                    <p class="max-w-[512px] mt-4 font-montserrat sm:text-lg text-slate-gray">Embark on a shopping journey that redefines your experience with unbeatable deals. From premier selections to incredible savings, we offer unparalleled value that sets us apart.</p>
+                    <p class="max-w-[512px] font-montserrat sm:text-lg text-slate-gray mt-6">Navigate a realm of possibilities designed to fulfill your unique desires, surpassing the loftiest expectations. Your journey with us is nothing short of exceptional.</p>
+                    <div class="specia-offer__links">
+                        <a href="#" class="button">
+                            View details
+                        </a>
+
+                        <a href="#" class="button bg-transparent border-1 border-slate-gray text-slate-gray">
+                            Learn more
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonial -->
+        <section class="w-full py-24 bg-pale-blue">
+            <div data-aos="fade-up" class="container">
+                <div class="justify-self-center mb-14">
+                    <h2 class="section-title text-center">
+                        What Our <span class="text-coral-red">Customers</span> Say?
+                    </h2>
+                    <p class="max-w-[512px] mx-auto font-montserrat sm:text-lg text-slate-gray mt-4 text-center">
+                        Hear genuine stories from our satisfied customers about their exceptional experiences with us.
+                    </p>
+                </div>
+
+                <div class="testimonial-swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="w-[384px] swiper-slide grid">
+                            <img class="rounded-full justify-self-center" src="assets/img/images/customer1.jpeg" alt="testimonial profile" width="120" height="120">
+                            <p class="font-montserrat sm:text-lg text-slate-gray mt-4 text-center max-w-[384px] justify-self-center">
+                                The attention to detail and the quality of the product exceeded my expectations. Highly recommended!
+                            </p>
+                            <div class="flex justify-center items-center gap-2.5 mt-3">
+                                <img slot="star" src="assets/img/icons/star.svg" alt="rating" width="24" height="24">
+                                <span slot="rating" class="text-xl/6 text-slate-gray font-montserrat">(4.5)</span>
+                            </div>
+                            <h3 class="font-palanquin text-xl md:text-3xl/[48px] font-bold text-center mt-2 md:mt-1">Morich Brown</h3>
+                        </article>
+
+                        <article class="w-[384px] swiper-slide grid">
+                            <img class="rounded-full justify-self-center" src="assets/img/images/customer2.svg" alt="testimonial profile" width="120" height="120">
+                            <p class="font-montserrat sm:text-lg text-slate-gray mt-4 text-center max-w-[384px] justify-self-center">
+                                The attention to detail and the quality of the product exceeded my expectations. Highly recommended!
+                            </p>
+                            <div class="flex justify-center items-center gap-2.5 mt-3">
+                                <img slot="star" src="assets/img/icons/star.svg" alt="rating" width="24" height="24">
+                                <span slot="rating" class="text-xl/6 text-slate-gray font-montserrat">(4.5)</span>
+                            </div>
+                            <h3 class="font-palanquin text-xl md:text-3xl/[48px] font-bold text-center mt-2 md:mt-1">Morich Brown</h3>
+                        </article>
+
+                        <article class="w-[384px] swiper-slide grid">
+                            <img class="rounded-full justify-self-center" src="assets/img/images/testimonial-perfil-1.png" alt="testimonial profile" width="120" height="120">
+                            <p class="font-montserrat sm:text-lg text-slate-gray mt-4 text-center max-w-[384px] justify-self-center">
+                                The attention to detail and the quality of the product exceeded my expectations. Highly recommended!
+                            </p>
+                            <div class="flex justify-center items-center gap-2.5 mt-3">
+                                <img slot="star" src="assets/img/icons/star.svg" alt="rating" width="24" height="24">
+                                <span slot="rating" class="text-xl/6 text-slate-gray font-montserrat">(4.5)</span>
+                            </div>
+                            <h3 class="font-palanquin text-xl md:text-3xl/[48px] font-bold text-center mt-2 md:mt-1">Morich Brown</h3>
+                        </article>
+                        
+                        <article class="w-[384px] swiper-slide grid">
+                            <img class="rounded-full justify-self-center" src="assets/img/images/testimonial-perfil-2.png" alt="testimonial profile" width="120" height="120">
+                            <p class="font-montserrat sm:text-lg text-slate-gray mt-4 text-center max-w-[384px] justify-self-center">
+                                The attention to detail and the quality of the product exceeded my expectations. Highly recommended!
+                            </p>
+                            <div class="flex justify-center items-center gap-2.5 mt-3">
+                                <img slot="star" src="assets/img/icons/star.svg" alt="rating" width="24" height="24">
+                                <span slot="rating" class="text-xl/6 text-slate-gray font-montserrat">(4.5)</span>
+                            </div>
+                            <h3 class="font-palanquin text-xl md:text-3xl/[48px] font-bold text-center mt-2 md:mt-1">Morich Brown</h3>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- join-us -->
+        <section id="contact" class="container sm:py-32 py-16">
+            <div data-aos="fade-up" class="grid gap-10">
+                <h2 class="section-title text-center">Sign Up from <span class="text-coral-red">Updates</span> & Newsletter</h2>
+                <form class="w-full md:max-w-[512px] flex gap-4 sm:gap-0 flex-col sm:flex-row justify-between sm:border sm:border-slate-gray p-2.5 mx-auto rounded-full overflow-hidden font-montserrat">
+                    <input class="flex-1 bg-transparent pl-5 join-us__input" type="email" placeholder="subscribe@nike.com">
+                    <button class="button join-us__buttom">Sign Up</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer data-aos="fade-down" class="w-full pt-12 pb-8 bg-black">
+        <div class="container">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+                <div>
+                    <a href="#">
+                        <img src="assets/img/images/footer-logo.svg" alt="footer-logo" width="150" height="46">
+                    </a>
+                    <p class="text-white-400 font-montserrat text-base/7 mt-6 max-w-[384px]">
+                        Get shoes ready for the new term at your nearest Nike store. Find Your perfect Size In Store. Get Rewards
+                    </p>
+                    <div class="flex items-center gap-5 mt-8">
+                        <div class="w-12 h-12 flex items-center justify-center rounded-full bg-white">
+                            <img src="assets/img/icons/facebook.svg" width="24" height="24" alt="facebook">
+                        </div>
+                        <div class="w-12 h-12 flex items-center justify-center rounded-full bg-white">
+                            <img src="assets/img/icons/twitter.svg" width="24" height="24" alt="twitter">
+                        </div>
+                        <div class="w-12 h-12 flex items-center justify-center rounded-full bg-white">
+                            <img src="assets/img/icons/instagram.svg" width="24" height="24" alt="instagram">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <div>
+                        <h3 class="footer__title">Products</h3>
+                        
+                        <ul class="grid gap-3">
+                            <li>
+                                <a class="text-white-400 hover:text-slate-gray font-montserrat" href="#">Air Force 1</a>
+                            </li>
+                            <li>
+                                <a class="text-white-400 hover:text-slate-gray font-montserrat" href="#">Air Max 1</a>
+                            </li>
+                            <li>
+                                <a class="text-white-400 hover:text-slate-gray font-montserrat" href="#">Air Jordan 1</a>
+                            </li>
+                            <li>
+                                <a class="text-white-400 hover:text-slate-gray font-montserrat" href="#">Air Force 2</a>
+                            </li>
+                            <li>
+                                <a class="text-white-400 hover:text-slate-gray font-montserrat" href="#">Nike Waffle Racer</a>
+                            </li>
+                            <li>
+                                <a class="text-white-400 hover:text-slate-gray font-montserrat" href="#">Nike Cortez</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="footer__title">Help</h3>
+
+                        <ul class="grid gap-3">
+                            <li>
+                                <a class="text-white-400 hover:text-slate-gray font-montserrat" href="#">About us</a>
+                            </li>
+                            <li>
+                                <a class="text-white-400 hover:text-slate-gray font-montserrat" href="#">FAQs</a>
+                            </li>
+                            <li>
+                                <a class="text-white-400 hover:text-slate-gray font-montserrat" href="#">How it works</a>
+                            </li>
+                            <li>
+                                <a class="text-white-400 hover:text-slate-gray font-montserrat" href="#">Privacy policy</a>
+                            </li>
+                            <li>
+                                <a class="text-white-400 hover:text-slate-gray font-montserrat" href="#">Payment policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="footer__title">touch</h3>
+
+                        <ul class="grid gap-3">
+                            <li>
+                                <a class="text-white-400 hover:text-slate-gray font-montserrat" href="#">customer@nike.com</a>
+                            </li>
+                            <li>
+                                <a class="text-white-400 hover:text-slate-gray font-montserrat" href="#">+92554862354</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="mt-24 text-center font-montserrat text-white px-4 text-xs sm:text-sm md:text-base lg:text-lg">
+            designed by Agha Sina with ❤️ and a little bit of iranian ☕
+        </p>
+    </footer>
+
+    <div class="overlay--deactive" id="overlay"></div>
+    <script src="assets/scripts/swiper-bundle.min.js"></script>
+    <script src="assets/scripts/aos.js"></script>
+    <script type="module" src="assets/scripts/app.js"></script>
+</body>
+</html>

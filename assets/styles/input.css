@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    html{
+        scroll-behavior: smooth;
+    }
+}
+
+@layer utilities{
+    .font-montserrat {
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .font-palanquin{
+        font-family: 'Palanquin', sans-serif;
+    }
+
+    .shadow-header{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+}
+
+@layer components{
+    .link{
+        @apply font-montserrat text-lg leading-normal text-slate-gray hover:text-coral-red transition-all;
+    }
+
+    .mobile-header{
+        @apply py-8 container md:hidden flex items-center justify-between;
+    }
+
+    .overlay--active{
+        @apply w-full h-full fixed inset-0 bg-black/50 z-10 transition-all duration-300;
+    }
+
+    .overlay--deactive{
+        @apply hidden w-full h-full fixed inset-0 bg-black/50 z-10 transition-all duration-300;
+    }
+
+    .mobile-menu--active{
+        @apply fixed top-0 left-0 z-50 bg-slate-50 w-full grid gap-y-8 h-96 px-5 py-6 transition-all duration-300;
+    }
+
+    .mobile-menu--deactive{
+        @apply fixed -top-96 left-0 z-50 bg-slate-50 w-full grid gap-y-8 h-96 px-5 py-6 transition-all duration-300;
+    }
+
+    .hero-imgs{
+        @apply relative w-full h-screen bg-primary flex-1 flex justify-center items-center;
+
+        background-image: url('../img/images/collection-background.svg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .collection{
+        @apply w-20 h-20 sm:w-32 md:w-40 sm:h-32 md:h-40 flex items-center justify-center rounded-xl cursor-pointer scale-90 transition-all;
+
+        background-image: url('../img/images/thumbnail-background.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .collection--active{
+        @apply sm:border-2 border-coral-red scale-100;
+    }
+
+    .product-card{
+        @apply flex justify-center flex-col items-center sm:items-stretch;
+    }
+
+    .specia-offer__links{
+       @apply flex items-center gap-4 mt-11;
+    }
+
+    .button{
+        @apply flex items-center gap-x-2 bg-coral-red text-white px-7 py-4 border border-coral-red w-fit rounded-full text-lg/6 font-montserrat;
+    }
+
+    .section-title{
+        @apply font-palanquin text-3xl sm:text-4xl md:text-5xl/[58px] font-bold;
+    }
+
+    .join-us__input{
+        outline: none;
+    }
+
+    .footer__title{
+        @apply text-white font-montserrat text-2xl/9 font-medium mb-6;
+    }
+
+    .footer__links{
+        @apply grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 lg:gap-8 gap-12 overflow-hidden
+    }
+
+    @media screen and (max-width:640px) {
+        .join-us__input{
+            box-sizing: border-box;
+            border: 1px solid #6D6D6D;
+            border-radius: 4rem;
+            padding: 1rem;
+            width: calc(100% - 1rem); /* Try using a simpler width value */
+            margin: 0 auto;
+        }
+        .join-us__buttom{
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width : 420px){
+    .section-title {
+        @apply text-2xl
+    }
+
+    .footer__links{
+        grid-template-columns: 1fr;
+    }
+
+    .section-title p p div.flex.items-center.gap-4.mt-11{
+        flex-direction: column;
+    }
+
+    .specia-offer__links{
+        flex-direction: column;
+        align-items: start;
+    }
+}
